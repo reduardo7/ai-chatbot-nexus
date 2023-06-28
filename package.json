@@ -1,0 +1,28 @@
+{
+  "name": "ai-chatbot-nexus",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=16.4"
+  },
+  "scripts": {
+    "start:dev": "npx nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eduardo Cuomo <reduardo7@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.22",
+    "rimraf": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "openai": "^3.2.1"
+  }
+}
